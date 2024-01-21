@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import {data} from "./data/structure"
-import { FolderStruct } from './components/Folderstruct'
+import { Structure } from './components/Structure'
 
 
 function App() {
@@ -11,7 +11,7 @@ const [explorer,setExplorer]=useState(data)
   return (
     <div className='container'>
       <div className="sidenav">
-      <FolderStruct explorer={explorer} />
+     <Structure explorer={explorer} />
       </div>
 <div className="main">
  
